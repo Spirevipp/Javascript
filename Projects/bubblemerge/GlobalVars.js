@@ -1,0 +1,10 @@
+//var playerCell = new PlayerCell();
+var cells = [];
+var maxCells = 100;
+var maxsize = 3000000;
+var defaultsize = 300;
+var spawnMin = defaultsize;
+var spawnMax = 1500;
+var canvasWidth = 480 * (16/9);
+var canvasHeigth = 480;
+var prevCells = 0;
