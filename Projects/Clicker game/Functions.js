@@ -1,13 +1,16 @@
 function mousePressed() {
+  //click button
   if (mouseX > (width/2)-46 && mouseX < (width/2)+46 && mouseY > (height/2)-13 && mouseY < (height/2)+13){
     coins.push(new Coin());
-    totalClicks += clickLVL;
+    totalClicks += clickAmount;
     console.log("CLICKS:  "+totalClicks);
   }
+  //upgrade
   if (mouseX > width-60 && mouseX < width && mouseY > height-60 && mouseY < height){
     if(totalClicks >= 1000){
       totalClicks -= 1000;
-      clickLVL = ceil(clickLVL * 1.1);
+      clickAmount = ceil(clickAmount * 1.1);
+      clickLVL += 1;
     }
   }
 }

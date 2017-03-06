@@ -19,7 +19,7 @@ function draw() {
   text(totalClicks, 30, 50);
   textSize(20);
   text(clickLVL, width-60, height-80);
-  if (totalClicks == 69){
+  if (totalClicks >= 69 && <= 699){
     image(scareImg, random(0, width), random(0, height));
   }
 }
