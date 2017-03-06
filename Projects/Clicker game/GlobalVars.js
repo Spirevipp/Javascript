@@ -5,7 +5,7 @@ var upgradeImg;
 var coins = [];
 var totalClicks = 0;
 var clickLVL = 1;
-var clickAmount = 0;
+var clickAmount = 1;
 var upgrade;
 var scareImg;
 var ben10;

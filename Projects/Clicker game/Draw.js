@@ -3,6 +3,9 @@ function draw() {
   if(clickLVL >= 10){
     image(ben10, 0, 0, width, height);
   }
+  if (totalClicks >= 69 && totalClicks <= 699){
+    image(scareImg, random(0, width), random(0, height));
+  }
   for (var i = 0; i < coins.length; i++) {
     coins[i].update();
     coins[i].show();
@@ -19,7 +22,4 @@ function draw() {
   text(totalClicks, 30, 50);
   textSize(20);
   text(clickLVL, width-60, height-80);
-  if (totalClicks >= 69 && <= 699){
-    image(scareImg, random(0, width), random(0, height));
-  }
 }
