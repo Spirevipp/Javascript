@@ -14,7 +14,8 @@ var ball = {
 };
 
 function setup() {
-	createCanvas(200, 200);
+	var size = min(windowWidth, windowHeight);
+	createCanvas(size, size);
 	ball.x = width/2;
 	ball.y = height/2;
 }
@@ -29,7 +30,7 @@ function draw() {
  			rect((width/3)*x, (height/3)*y, width/3, height/3);
  		}
  	}
- 	
+
  	display();
  	bounce();
  	move();

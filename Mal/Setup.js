@@ -3,5 +3,6 @@ function preload() {
 }
 
 function setup(){
-  canvas = createCanvas(400, 400);
+  var size = min(windowWidth, windowHeight);
+	canvas = createCanvas(size, size);
 }
