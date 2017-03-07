@@ -1,4 +1,9 @@
 function mousePressed() {
+  afkTimer = 0;
+  gif = false;
+  reeeeGIF.hide();
+  reeeeMP3.stop();
+
   //click button
   if (mouseX > (width/2)-46 && mouseX < (width/2)+46 && mouseY > (height/2)-13 && mouseY < (height/2)+13){
     coins.push(new Coin());
@@ -28,7 +33,11 @@ function mouseMoved() {
 }
 
 function mouseDragged() {
-
+  if (mouseX > (width/2)-46 && mouseX < (width/2)+46 && mouseY > (height/2)-13 && mouseY < (height/2)+13){
+    coins.push(new Coin());
+    totalClicks += clickAmount;
+    console.log("CLICKS:  "+totalClicks);
+  }
 }
 
 function mouseWheel() {

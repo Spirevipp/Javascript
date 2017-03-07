@@ -9,3 +9,7 @@ var clickAmount = 1;
 var upgrade;
 var scareImg;
 var ben10;
+var reeeeGIF;
+var reeeeMP3;
+var afkTimer = 0;
+var gif;
