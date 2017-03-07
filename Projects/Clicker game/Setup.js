@@ -4,8 +4,8 @@ function preload() {
   upgradeImg = loadImage("assets/guns.png");      // 224x224
   scareImg = loadImage("assets/scare.jpg");       // 164x237
   ben10 = loadImage("assets/ben10.png");
-  reeeeGIF = createImg("assets/reeee.gif");
-  reeeeMP3 = loadSound("assets/reeee.mp3");
+  reeeeGIF = createImg("assets/reee.gif");
+  reeeeMP3 = loadSound("assets/reee.mp3");
 }
 
 function setup() {
