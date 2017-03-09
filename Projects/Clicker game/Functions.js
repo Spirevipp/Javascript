@@ -32,6 +32,10 @@ function mouseMoved() {
 }
 
 function mouseDragged() {
+  afkTimer = 0;
+  gif = false;
+  reeeeGIF.hide();
+  reeeeMP3.stop();
   if (mouseX > (width/2)-46 && mouseX < (width/2)+46 && mouseY > (height/2)-13 && mouseY < (height/2)+13){
     coins.push(new Coin());
     totalClicks += clickAmount;
