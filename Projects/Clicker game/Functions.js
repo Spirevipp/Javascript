@@ -10,13 +10,12 @@ function mousePressed() {
     totalClicks += clickAmount;
     console.log("CLICKS:  "+totalClicks);
   }
-  //upgrade
-  if (mouseX > width-60 && mouseX < width && mouseY > height-60 && mouseY < height){
-    if(totalClicks >= 1000){
-      totalClicks -= 1000;
-      clickAmount = ceil(clickAmount * 1.1);
-      clickLVL += 1;
-    }
+}
+function upgrade() {
+  if(totalClicks >= 1000*clickAmount){
+    totalClicks -= 1000*clickAmount;
+    clickAmount = ceil(clickAmount * 1.1);
+    clickLVL += 1;
   }
 }
 
@@ -33,10 +32,13 @@ function mouseMoved() {
 }
 
 function mouseDragged() {
+  afkTimer = 0;
+  gif = false;
+  reeeeGIF.hide();
+  reeeeMP3.stop();
   if (mouseX > (width/2)-46 && mouseX < (width/2)+46 && mouseY > (height/2)-13 && mouseY < (height/2)+13){
     coins.push(new Coin());
     totalClicks += clickAmount;
-    console.log("CLICKS:  "+totalClicks);
   }
 }
 

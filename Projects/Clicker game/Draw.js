@@ -1,6 +1,5 @@
 function draw() {
   afkTimer += 1;
-  console.log(afkTimer);
 
   if (afkTimer > 1000 && !gif) {
     reeeeGIF.show();
@@ -28,18 +27,18 @@ function draw() {
       coins.splice(i, 1);
     }
   }
-  //console.log(coins.length);
   noTint();
   clickArea = image(clickAreaImg, (width/2)-46, (height/2)-13, 92, 26);
 
-  //image(upgradeImg, width-60, height-60, 60, 60);
-  var uSize = min(width, height) / 12;
-  image(upgradeImg, width-uSize, height-uSize, uSize, uSize);
+  upgradeImg.size(uSize, uSize);
+  upgradeImg.position(width, 0);
+  textAlign(RIGHT);
+  textSize(20);
+  text(clickLVL, width-20, uSize/2);
 
+  textAlign(LEFT);
   fill(255);
   textSize(50);
   text(totalClicks, 30, 50);
-  textSize(20);
-  text(clickLVL, width-uSize, height-(uSize*1.3));
-  //text(clickLVL, width-60, height-80);
+
 }

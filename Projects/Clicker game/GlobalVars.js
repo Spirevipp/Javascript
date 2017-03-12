@@ -12,4 +12,5 @@ var ben10;
 var reeeeGIF;
 var reeeeMP3;
 var afkTimer = 0;
-var gif;
+var gif = false;
+var uSize;
