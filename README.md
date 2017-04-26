@@ -1,2 +1,2 @@
 # Javascript
-Javascript spill/etc
+Javascript games/programs/etc
