@@ -1,1 +1,1 @@
-http-server "Server page.html"
+http-server ./index.html
