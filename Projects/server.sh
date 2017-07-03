@@ -1,1 +1,1 @@
-http-server ./Javascript/Projects/index.html
+http-server Javascript/Projects/
